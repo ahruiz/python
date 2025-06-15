@@ -1,16 +1,18 @@
 #codigo para calcular el indice de masa corporal
 
+print("CAlcular el IMC en base a peso y estatura.....")    #explicacion del codigo
 
-peso = float(input("introduce tu peso en Kgs: "))
-estatura = float(input("introduce tu estatura en metros: "))
+peso = float(input("introduce tu peso en Kgs: ")) #pedimos al usr capt los datos
+estatura = float(input("introduce tu estatura en metros: "))  # y se definen variables float  al mismo tiempo
 
-if estatura > 2.2:
-    nuevaEstat = estatura / 100 #conversion a metros pensando que capturo en 
-    estatura = nuevaEstat
+if estatura > 2.2: #comprobamos que la captura sea en metros, sino se cumple, seguimos con el proceso
+    nuevaEstat = estatura / 100 #conversion a metros pensando que capturo en centimetros
+    estatura = nuevaEstat   #damos el valor nuevo a la variable en metros
 
-imc = round(peso / (estatura*estatura),2)
+imc = round(peso / (estatura*estatura),2)   #Calculamos el IMC y lo redondeamos a dos digitos
 
 print(f"En base a tu peso {peso} y tu estatura {estatura} tienes un IMC de {imc}")
+#mostramos los datos del IMC y una ADVERTENCIA sobre su situacion
 
 if imc <= 18.5:
     print("BAJO PESO....debes comer mas")
