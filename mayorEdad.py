@@ -22,7 +22,7 @@ else:
 # edad = int(input("Captura tu edad para mostrarte la cartelera: "))
 
 # if edad < 18:
-#     cartelMen = [key for key,value in peliculas.items() if value == "A"]
+#     cartelMen = [k for k,v in peliculas.items() if v == "A"]
 #     print(f"{Fore.YELLOW}La cartelera para menores de 18 años es: {cartelMen} {Fore.WHITE}")
 # else:
 #     cartelMay = [key for key,value in peliculas.items()]
