@@ -9,5 +9,5 @@ longtexto = len(texto) #sacamos la long del texto
 
 longPalabras = longtexto - espacios                         # obtenemos la longitud del texto sin espacios
 
-print(f"El texto es: [{texto}] y tiene una longitud de {longPalabras} y {espacios} espacios en blanco ")
+print(f"El texto es: [{texto}] y tiene una longitud de {longPalabras} caracteres y {espacios} espacios en blanco ")
 #mostramos los resultados

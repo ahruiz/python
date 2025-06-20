@@ -1,7 +1,7 @@
 #codigo para diferenciar peliculas de acuerdo a la edad
 from colorama import Fore
 
-print("Mostrar peliculas de acuerdo a la edad") # explicacion del codigo
+print("Mostrar cartelera de peliculas de acuerdo a la edad") # explicacion del codigo
 
 peliculas = {"EL EXORCISTA": "R", "BLANCA NIEVES":"A", "DESTINO FINAL":"R", "LA SIRENITA":"A"}
 

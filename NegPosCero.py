@@ -26,6 +26,7 @@ else:
     num1 = int(num1) #llevamos los datos a enteros
     num2 = int(num2)
     totResta = num2 - num1 #para poder efectuar operaciones
+    
     if totResta < 0:   # definimos si son neg, pos o cero
         print(f"Los numeros capturados son {num1} y {num2}...su resta es {totResta} y es NEGATIVO")
     elif totResta > 0:  

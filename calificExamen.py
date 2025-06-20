@@ -13,7 +13,11 @@ if not Preguntas.isdigit() or not numaciertos.isdigit() or not numfallos.isdigit
 
 numaciertos = int(numaciertos) # declaramos como enteros las variables que intervienen en la siguiente operacion
 Preguntas = int(Preguntas)     #hacemos el num de preguntas dato entero
+numfallos = int(numfallos)
 
-calif = round((numaciertos / Preguntas) * 100,2)  #calculamos la calificacion redondeado a 2 digitos
+if Preguntas == (numaciertos + numfallos):     
+    calif = round((numaciertos / Preguntas) * 100,2)  #calculamos la calificacion redondeado a 2 digitos
+    print(f"**************************************** Mi calificacion   : {calif}") #mostramos el resultado
+else:
+    print("El total de preguntas no coincide con el total de aciertos y fallos....")
 
-print(f"**************************************** Mi calificacion   : {calif}") #mostramos el resultado
